@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tap Now - Digital Business Cards</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 30px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .card-logo {
+      width: 40px;
+      height: 55px;
+      background: #fff;
+      color: #000;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transform: rotate(-10deg);
+    }
+
+    .card-logo:nth-child(2) { transform: rotate(5deg); }
+    .card-logo:nth-child(3) { transform: rotate(15deg); }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    .hero {
+      padding: 80px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: #fff;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .hero-image img {
+      width: 350px;
+      border-radius: 12px;
+      filter: grayscale(100%);
+    }
+
+    .section {
+      padding: 80px 10%;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #222;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      filter: grayscale(100%);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #222;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="card-logo">TAP NOW</div>
+    <div class="card-logo">TAP NOW</div>
+    <div class="card-logo">TAP NOW</div>
+  </div>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Digital Business Cards, Reimagined.</h1>
+    <p>
+      Tap Now helps businesses instantly share their digital presence through a single tap.
+      Replace outdated business cards with one smart link that does everything.
+    </p>
+    <button class="btn">Get Started</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+         alt="Business networking"/>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <h2>Features</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb" />
+      <h3>Instant Sharing</h3>
+      <p>Share your entire business profile with a single tap or link.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" />
+      <h3>Custom Profiles</h3>
+      <p>Build a fully branded digital identity for your business.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" />
+      <h3>Easy Updates</h3>
+      <p>Change details anytime without reprinting anything ever again.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <h2>How it works</h2>
+  <p>
+    Create your Tap Now profile → Get your unique link → Share instantly via QR, NFC, or URL.
+  </p>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>Interested in Tap Now for your business? Get in touch and we’ll set you up.</p>
+</section>
+
+<footer>
+  © 2026 Tap Now. All rights reserved.
+</footer>
+
+</body>
+</html>
